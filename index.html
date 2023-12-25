@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calendar Component</title>
+    <script src="webcalendar.js"></script>
+    <script>
+        var greens = [3, 4];
+    </script>
+    <style>
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        a {
+            text-decoration: none;
+            color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Calendar Component</h1>
+    <p>A HTML web component for displaying calendars on web pages.</p>
+    <template id="calendar">
+        <style>
+            * {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
+            table {
+                padding: 0;
+                margin: 0;
+            }
+            th {
+                padding: 0;
+                margin: 0;
+                width: 30px;
+                height: 30px;
+            }
+            td {
+                margin: 5px;
+                padding: 0;
+                padding: 3px;
+            }
+            .header {
+                background-color: lavender;
+                text-align: center;
+                padding: 10px;
+            }
+            .item {
+                background-color: #f7f7f7;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+            }
+            .item span {
+                opacity: 0.5;
+            }
+            .green {
+                background-color: rgb(146, 255, 146);
+            }
+            .empty {
+                background-color: #f7f7f7;
+            }
+        </style>
+    </template>
+    <calendar-element data-month="January" data-year="2024" starting_day="Mon" data-heading="Days I walked in January"></calendar-element>
+    <footer>
+        <p>Created with <span style="color: red;">&hearts;</span> by <a href="https://jamesg.blog">capjamesg</a>.</p>
+        <p>View the source code on <a href="https://github.com/capjamesg/webcalendar">GitHub</a>.</p>
+    </footer>
+</body>
+</html>
