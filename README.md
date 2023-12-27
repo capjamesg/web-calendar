@@ -45,6 +45,16 @@ Set:
 - `data-starting-day`: The first day of the month. Must be `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat`, or `Sun`.
 - `data-heading`: The heading to show at the top of the calendar.
 
+You can set squares to be green by specifying the following code before a `calendar-element` element:
+
+```html
+<script>
+    var greens = [3, 4];
+</script>
+```
+
+This is intended for use in applications where you want to track if a goal was completed on a day (i.e. a personal habit tracker).
+
 ## License
 
 This project is licensed under an [MIT license](LICENSE).
