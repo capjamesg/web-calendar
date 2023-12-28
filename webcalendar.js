@@ -59,7 +59,7 @@ class Calendar extends HTMLElement {
         this.starting_day_idx = starting_idx[this.starting_day];
         this.has_added_prepending_spaces = false;
         this.month_day_count = get_month_day_count(this.month, this.year);
-        this.greens = greens || [];
+        this.filled = filled || [];
 
         this.weeks = Math.ceil((this.month_day_count + starting_idx[this.starting_day]) / 7);
 
@@ -95,7 +95,7 @@ class Calendar extends HTMLElement {
             var row = document.createElement("tr");
             for (var j = 0; j < 7; j++) {
                 var cell = document.createElement("td");
-                if (this.greens.includes((i * 7) + j - this.starting_day_idx + 1)) {
+                if (this.filled.includes((i * 7) + j - this.starting_day_idx + 1)) {
                     console.log("green", i, j);
                     cell.classList.add("green");
                 }
