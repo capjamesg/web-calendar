@@ -49,11 +49,13 @@ You can set squares to be green by specifying the following code before a `calen
 
 ```html
 <script>
-    var greens = [3, 4];
+    var filled = [3, 4];
 </script>
 ```
 
 This is intended for use in applications where you want to track if a goal was completed on a day (i.e. a personal habit tracker).
+
+Each number corresponds with the date (i.e. 3 is the 3rd) to fill in with a green color.
 
 ## License
 
